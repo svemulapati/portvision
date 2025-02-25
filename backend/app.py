@@ -4,7 +4,7 @@ from scanner import PortScanner
 import logging
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS
+CORS(app, resources={r"/*": {"origins": "*"}})  # Enable CORS for all origins
 scanner = PortScanner()
 
 logging.basicConfig(level=logging.DEBUG)
