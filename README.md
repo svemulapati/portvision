@@ -33,12 +33,12 @@ PortVision
      ```
    - Install the required dependencies:
      ```
-     pip install -r requirements.txt
+     pip3 install -r requirements.txt
      ```
 
 3. Run the backend server:
    ```
-   python app.py
+   python3 app.py
    ```
 
 4. Open the frontend:

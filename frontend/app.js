@@ -2,11 +2,15 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('DOM fully loaded and parsed');
     const form = document.getElementById('portScanForm');
     const stopButton = document.getElementById('stopButton');
+    const backgroundAudio = document.getElementById('backgroundAudio');
     let scanning = false;
 
     form.addEventListener('submit', async function(event) {
         event.preventDefault();
         console.log('Form submitted');
+
+        // Play the background audio when the form is submitted
+        backgroundAudio.play();
 
         const ipAddress = document.getElementById('ipAddress').value;
         const startPort = document.getElementById('startPort').value || 1;
