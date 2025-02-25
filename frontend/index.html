@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortVision - Port Scanner</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="header">PortVision</h1>
+        <form id="portScanForm">
+            <div class="input-group">
+                <label for="ipAddress" class="label">IP Address</label>
+                <input type="text" id="ipAddress" required class="input" placeholder="Enter IP Address">
+            </div>
+            <div class="input-group">
+                <label for="startPort" class="label">Start Port</label>
+                <input type="number" id="startPort" value="1" min="1" max="65535" class="input">
+            </div>
+            <div class="input-group">
+                <label for="endPort" class="label">End Port</label>
+                <input type="number" id="endPort" value="1024" min="1" max="65535" class="input">
+            </div>
+            <button type="submit" class="button">Scan Ports</button>
+        </form>
+        <button id="stopButton" class="button stop-button" style="display: none;">Stop Scanning</button>
+        <div id="results" class="results"></div>
+    </div>
+</body>
+</html>
