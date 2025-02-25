@@ -62,3 +62,6 @@ Contributions are welcome! Please feel free to submit a pull request or open an 
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Warning: 
+Scanning IP addresses for open ports is unethical and not recommended. Websites like scanme.nmap.org (provided by Nmap) allow scanning for educational and testing purposes. Do nslookup to get the IP address.
